@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        
+        <img id="iconOpen" src="./assets/images/iconOpen.png" alt="" />
+        <div id="navMobile">
+          <div class="imgMenu">
+            <img
+              id="iconClose"
+              class="disabled"
+              src="./assets/images/iconClose.png"
+              alt=""
+            />
+          </div>
+          <ul class="listaMobile">
+            <li><a href="#sobreTexto">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <input type="checkbox" id="check" />
+              <label for="check"></label>
+            </li>
+          </ul>
+        </div>
+
+        <div id="navDesktop">
+          <nav>
+            <ul class="listaDesktop">
+              <li><a href="#sobreTexto">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="dayNight">
+              <input type="checkbox" id="checkD" />
+              <label id="checkDesk" for="checkD"></label>
+            </div>
+          </nav>
+        </div>
+
+      </header>
+
+      <div id="sobre">
+        <div class="fotoFlutuante">
+          <img class="fotoPerfil" src="./assets/images/eu.png" alt="" />
+        </div>
+        <div class="textoNome">
+          <p class="apresentation">Olá, eu sou</p>
+          <h1 class="nome">Guilherme Webber</h1>
+          <p class="apresentation">Desenvolvedor front-end JR</p>
+        </div>
+      </div>
+      <div class="flecha">
+        <h1 class="h1Flecha">⇩</h1>
+      </div>
+    </div>
+    <main>
+
+      <div class="containerMain">
+        <section id="sobreTexto" >
+          <h1 data-aos="fade-up">Sobre mim</h1>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            officia debitis quasi quas. Reiciendis at tempora facilis dolores
+            tempore esse adipisci magnam minima soluta corporis ducimus, minus
+            itaque, iste delectus. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nobis voluptatem, vero, accusamus ut distinctio
+            exercitationem voluptatibus facere deleniti numquam autem pariatur
+            reprehenderit possimus veniam explicabo cumque, voluptatum eum
+            consequuntur hic!
+          </p>
+        </section>
+
+        <section id="projetos" >
+          <div class="titleProj" >
+            <h1 class="h1Proj">Projetos</h1>
+          </div>
+          <div class="allProjs" >
+
+            <div class="projs" data-aos="fade-up">
+              <h3>Valorant guide</h3>
+              <div class="divProjetos">
+                <a href="https://valorant-guide.vercel.app/">
+                  <img class="imagesProj" src="./assets/images/valo-guide.png"/>
+                </a>
+              </div>
+              <p>
+                Esse é um projeto no qual me desafiei em fazer um site que consumisse uma API. Utilizei apenas HTML, CSS e JS para o desenvolvimento do mesmo. 
+              <p><a class="linkGitHubProj" href="https://github.com/guiwebber/valorant-guide"
+                >Link do projeto</a
+              ></p>
+            </p>
+            </div>
+
+          <div class="projs" data-aos="fade-up">
+            <h3>SNKRS Store</h3>
+            <div class="divProjetos">
+            <a href="https://snkrs-kohl.vercel.app/">
+              <img class="imagesProj" src="./assets/images/snkrs.png" alt=""/></a>
+            </div>
+            <p>
+              Esse é um projeto no qual quis por em prática algumas animações CSS. Foram utilizados HTML, CSS e JS para o desenvolvimento. 
+              <p>
+                <a class="linkGitHubProj" href="https://github.com/guiwebber/snkrs">Link do projeto</a>
+              </p>
+            </p>
+          </div>
+
+          <div class="projs" data-aos="fade-left">
+            <h3>News home page</h3>
+            <div class="divProjetos">
+            <a href="https://news-homepage-grid.vercel.app/">
+              <img class="imagesProj" src="./assets/images/newshomepage.png" alt=""/>
+            </a>
+          </div>
+            <p>
+              Este projeto é um projeto de um site chamado Front-end Mentor, no qual me desafiei em fazer diversos projetos e selecionei este para utilizar aqui. Utilizei HTML, CSS, JS.
+              <p>
+                <a class="linkGitHubProj" href="https://github.com/guiwebber/news-homepage-grid">Link do projeto</a>
+              </p>
+            </p>
+          </div>
+        </section>
+
+        <section id="habilidades" >
+          <h1 data-aos="fade-up">Habilidades</h1>
+          <div class="habilidadesFlex">
+            <div class="imgHabilidade">
+              <img data-aos="fade-right" class="imagemEu" src="./assets/images/SP-Studio.png" />
+            </div>
+            <div class="hardskills" data-aos="fade-left">
+              <img
+                class="imgSkills github"
+                src="./assets/images/github.png"
+              /><img class="imgSkills html" src="./assets/images/html.png" />
+              <img class="imgSkills js" src="./assets/images/js.png" />
+              <img class="imgSkills git" src="./assets/images/git.png" />
+
+              <img class="imgSkills react" src="./assets/images/react.png" />
+
+              <img class="imgSkills css" src="./assets/images/css.png" />
+            </div>
+          </div>
+          <p id="textoSkills">**Clique nas habilidades para ler a descrição delas**</p>
+        </section>
+
+        <section id="contato" data-aos="fade-right">
+          <h1 data-aos="fade-left">Contato</h1>
+          <div data-aos="fade-right">
+            <p>Aqui você encontrará todos os contatos sobre mim</p>
+            <a href="">
+              <img class="imgContatos" src="./assets/images/whatsapp.png" alt=""/>
+            </a>
+            <a href="">
+              <img class="imgContatos" src="./assets/images/linkedin.png" alt=""/>
+            </a>
+            <a href="">
+              <img class="imgContatos" src="./assets/images/gmail.png" alt=""/>
+            </a>
+            <a href="">
+              <img class="imgContatos" src="./assets/images/github2.png" alt=""/>
+            </a>
+            <a href="">
+              <img class="imgContatos" src="./assets/images/curriculos.png"/>
+            </a>
+          </div>
+        <p>***********Fazer o load dos itens ao scrollar, estilizar tipo zebra intercalando as cores, whatsapp:linkar direto para minha conversa, curriculo: upar o cv em algum lugar e mostra-lo ao clicar************</p>
+        </section>
+      </div>
+      
+    </main>
+    <footer id="footer">
+      <p>© Todos os direitos reservados</p>
+    </footer>
+    <script src="./assets/js/scripts.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+</html>

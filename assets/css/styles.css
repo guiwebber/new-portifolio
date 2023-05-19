@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Overpass", sans-serif;
+}
+#container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/nuvem.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.imgMenu {
+  max-width: fit-content;
+  border-radius: 10px;
+}
+#iconClose,
+#iconOpen {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+}
+
+#navMobile a {
+  color: black;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+#navMobile a:hover {
+  color: #c88c31;
+}
+#navMobile li {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+li a:hover {
+  color: #c88c31;
+}
+#navMobile {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(67, 65, 65, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.disabled {
+  display: none;
+}
+
+label {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background-color: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: inset;
+  transition: 0.3s;
+}
+label:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+#check {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+#check:checked + label {
+  background: #242424;
+}
+#check:checked + label:after {
+  left: 75px;
+  transform: translate(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+/*       -------------------------->   MAIN   <-------------------------                   */
+
+main {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  height: 90vh;
+  width: 100%;
+}
+#sobre {
+  margin-top: 0%;
+}
+.fotoPerfil {
+  width: 200px;
+  border-radius: 50px;
+}
+.fotoFlutuante {
+  height: 300px;
+  text-align: center;
+}
+.textoNome {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.flecha {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  animation: flecha 0.6s infinite alternate-reverse linear;
+  position: absolute;
+  bottom: 0;
+}
+.h1Flecha {
+  text-align: center;
+  font-size: 5rem;
+}
+.nome {
+  animation: piscaCursor 500ms steps(40) infinite normal,
+    digitaNome 5s steps(40) 1s normal both;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgb(8, 7, 7);
+  margin: auto;
+  max-width: fit-content;
+}
+#navDesktop {
+  display: none;
+}
+.apresentation {
+  font-size: 1.5rem;
+}
+
+.containerMain {
+  width: 100%;
+}
+.imagesProj {
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.imagesProj:hover {
+  width: 320px;
+}
+.projs {
+  width: 350px;
+  margin: 20px auto;
+}
+.imagemEu {
+  width: 250px;
+}
+.imgSkills {
+  width: 70px;
+  cursor: pointer;
+  margin: 10px;
+}
+.hardskills {
+  width: 300px;
+  margin: auto;
+}
+.imgContatos {
+  width: 70px;
+}
+#projetos {
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#sobreTexto {
+  background-color: rgb(146, 191, 238);
+}
+#contato {
+  background-color: #ffffff;
+}
+#contato a {
+  margin: 10px;
+}
+.titleProj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.allProjs {
+  display: flex;
+  flex-direction: column;
+}
+.linkGitHubProj {
+  color: #185f8e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.1s;
+}
+.linkGitHubProj:hover {
+  color: #8b52e8;
+  font-weight: bold;
+}
+#habilidades {
+  background-color: rgb(146, 191, 238);
+}
+footer {
+  background-color: rgba(19, 82, 124, 0.947);
+}
+section {
+  padding: 55px 0;
+}
+@keyframes flecha {
+  0% {
+    bottom: 10px;
+  }
+
+  100% {
+    bottom: -10px;
+  }
+}
+@keyframes piscaCursor {
+  from {
+    border-right-color: rgb(94, 93, 93);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes digitaNome {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@media (min-width: 650px) {
+  #sobre {
+    margin-top: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #sobre {
+    margin-top: 10%;
+  }
+  #iconOpen {
+    visibility: hidden;
+  }
+  #navMobile {
+    display: none;
+  }
+  #navDesktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .listaDesktop {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .listaDesktop li {
+    margin: 20px;
+  }
+  .listaDesktop li a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+  .flecha {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    animation: flecha 0.6s infinite alternate-reverse linear;
+  }
+  .checkDesk {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+      inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: inset;
+    transition: 0.3s;
+  }
+  .checkDesk:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  #checkD {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  #checkD:checked + label {
+    background: #242424;
+  }
+  #checkD:checked + label:after {
+    left: 75px;
+    transform: translate(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+  }
+
+  .dayNight {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  #projetos {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li a {
+    color: black;
+  }
+
+
+  .habilidadesFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .hardskills {
+    margin: 0;
+  }
+  .allProjs {
+  display: flex;
+  flex-direction:row;
+}
+.divProjetos {
+  width: 370px;
+  height: 220px;
+}
+}
