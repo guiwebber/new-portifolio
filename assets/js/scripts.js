@@ -26,7 +26,7 @@ let footer = document.getElementById("footer");
 
 let check = document.getElementById("check");
 
-let urlNight = "../assets/images/ceu-estrelado.jpg";
+let urlNight = "../assets/images/ceu3.jpg";
 let urlDay = "../assets/images/nuvens.png";
 function changeDay() {
   container.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${urlDay})`;
