@@ -18,6 +18,7 @@ iconClose.addEventListener("click", () => {
 });
 
 //night and day
+
 let sobreTexto = document.getElementById("sobreTexto");
 let projetos = document.getElementById("projetos");
 let habilidades = document.getElementById("habilidades");
@@ -26,37 +27,39 @@ let footer = document.getElementById("footer");
 
 let check = document.getElementById("check");
 
-let urlNight = "../assets/images/ceu3.jpg";
-let urlDay = "../assets/images/nuvens.png";
+let link = document.querySelectorAll("li a");
+console.log(link);
 function changeDay() {
-  container.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${urlDay})`;
-  container.style.color = "black";
   for (var i = 0; i < link.length; i++) {
     link[i].style.color = "black";
   }
-  sobreTexto.style.backgroundColor = "rgb(146, 191, 238)";
-  habilidades.style.backgroundColor = "rgb(146, 191, 238)";
+  container.style.background = ` linear-gradient(27deg, #73abe2e0 51.04%, #fff 51.05%)`;
+  container.style.color = "black";
+  sobreTexto.style.backgroundColor = "#fff";
+  habilidades.style.backgroundColor = "#fff";
   sobreTexto.style.color = "rgba(0, 0, 0, 0.867)";
   habilidades.style.color = "rgba(0, 0, 0, 0.867)";
 
   contato.style.color = "rgba(0, 0, 0, 0.867)";
   projetos.style.color = "rgba(0, 0, 0, 0.867)";
-  projetos.style.backgroundColor = "rgba(255, 255, 255, 0.555)";
-  contato.style.backgroundColor = "rgba(255, 255, 255, 0.555)";
+  projetos.style.backgroundColor = "#73abe2e0";
+  contato.style.backgroundColor = "#73abe2e0";
   footer.style.backgroundColor = "rgba(19, 82, 124, 0.947)";
 }
 
 function changeNight() {
-  container.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${urlNight})`;
+  container.style.background = `  linear-gradient(27deg,  rgba(0, 0, 0, 0.555) 51.04%, rgba(0, 0, 0, 0.867)51.05%)`;
   container.style.color = "white";
+
   for (var i = 0; i < link.length; i++) {
     link[i].style.color = "white";
   }
+
   sobreTexto.style.backgroundColor = "rgba(0, 0, 0, 0.867)";
   habilidades.style.backgroundColor = "rgba(0, 0, 0, 0.867)";
 
-  sobreTexto.style.color = "rgba(255, 255, 255, 0.867)";
-  habilidades.style.color = "rgba(255, 255, 255, 0.867)";
+  sobreTexto.style.color = "rgba(255, 255, 255, 1)";
+  habilidades.style.color = "rgba(255, 255, 255, 1)";
 
   projetos.style.backgroundColor = "rgba(0, 0, 0, 0.555)";
   contato.style.backgroundColor = "rgba(0, 0, 0, 0.555)";
@@ -66,7 +69,7 @@ function changeNight() {
 
   footer.style.backgroundColor = "rgba(115, 0, 255, 1)";
 }
-let link = document.querySelectorAll("li a");
+
 let checkD = document.getElementById("checkD");
 checkD.addEventListener("change", () => {
   if (checkD.checked) {
@@ -92,23 +95,46 @@ let git = document.querySelector(".git");
 let github = document.querySelector(".github");
 let react = document.querySelector(".react");
 let html = document.querySelector(".html");
+let imagensTecnologias = document.querySelector(".imagensTecnologias");
 
 css.addEventListener("click", () => {
   textoSkills.innerHTML = "CSS significa cascata estilosa";
+  imagensTecnologias.src = "./assets/images/css3d.png";
 });
 js.addEventListener("click", () => {
   textoSkills.innerHTML = "Javascript é uma linguagem de programação";
+  imagensTecnologias.src = "./assets/images/js3d.png";
 });
 react.addEventListener("click", () => {
   textoSkills.innerHTML = "React é uma biblioteca";
+  imagensTecnologias.src = "./assets/images/react3d.png";
 });
 html.addEventListener("click", () => {
   textoSkills.innerHTML =
     "HTML significa Hyper Text Markup Language, que traduzido seria linguagem de marcação de texto";
+  imagensTecnologias.src = "./assets/images/html3d.png";
 });
 github.addEventListener("click", () => {
   textoSkills.innerHTML = "Github é um sistema de versionamento de texto";
+  imagensTecnologias.src = "./assets/images/github3d.png";
 });
 git.addEventListener("click", () => {
   textoSkills.innerHTML = "git é git";
+  imagensTecnologias.src = "./assets/images/git.png";
 });
+
+/*************************BONECO************************ */
+
+let itensContatos = document.querySelectorAll(".itensContatos");
+
+let boneco = document.getElementById("boneco");
+boneco.src = "./assets/images/sad.png";
+
+for (var i = 0; i < itensContatos.length; i++) {
+  itensContatos[i].addEventListener("mouseover", () => {
+    boneco.src = "./assets/images/happy.png";
+  });
+  itensContatos[i].addEventListener("mouseout", () => {
+    boneco.src = "./assets/images/sad.png";
+  });
+}
