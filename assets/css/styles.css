@@ -190,17 +190,17 @@ main {
   margin: 10px;
 }
 .hardskills {
-  width: 300px;
   margin: auto;
   max-height: 96px;
   height: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin: 10px;
   border-radius: 20px;
   background-image: radial-gradient(#494e4e, #7f8fa8);
+  width: 100px;
+  padding: 30px;
 }
 
 .imgContatos {
@@ -287,7 +287,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10px;
+  width: 80%;
+  height: 200px;
+  min-width: 360px;
+  flex-wrap: wrap;
 }
 #textoSkills {
   height: 50px;
@@ -312,6 +315,7 @@ section {
   border-radius: 20px;
   align-items: center;
 }
+
 @keyframes flecha {
   0% {
     bottom: 10px;
@@ -444,12 +448,19 @@ section {
   .hardskills img:hover {
     width: 80px;
   }
-
+  .hardskill {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    flex-wrap: nowrap;
+  }
   .hardskills {
     margin: 10px;
     background-image: radial-gradient(#494e4e, #7f8fa8);
     border-radius: 20px;
     cursor: pointer;
+    width: 300px;
   }
   .ctts img {
     width: 65px;
@@ -458,7 +469,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: -250px;
   }
   .imgHabilidade {
     padding: 20px;
