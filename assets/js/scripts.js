@@ -99,24 +99,24 @@ let imagensTecnologias = document.querySelector(".imagensTecnologias");
 
 css.addEventListener("click", () => {
   textoSkills.innerHTML = "CSS significa cascata estilosa";
-  imagensTecnologias.src = "./assets/images/css3d.png";
+  imagensTecnologias.src = "./assets/images/css.png";
 });
 js.addEventListener("click", () => {
   textoSkills.innerHTML = "Javascript é uma linguagem de programação";
-  imagensTecnologias.src = "./assets/images/js3d.png";
+  imagensTecnologias.src = "./assets/images/js.png";
 });
 react.addEventListener("click", () => {
   textoSkills.innerHTML = "React é uma biblioteca";
-  imagensTecnologias.src = "./assets/images/react3d.png";
+  imagensTecnologias.src = "./assets/images/react.png";
 });
 html.addEventListener("click", () => {
   textoSkills.innerHTML =
     "HTML significa Hyper Text Markup Language, que traduzido seria linguagem de marcação de texto";
-  imagensTecnologias.src = "./assets/images/html3d.png";
+  imagensTecnologias.src = "./assets/images/html.png";
 });
 github.addEventListener("click", () => {
   textoSkills.innerHTML = "Github é um sistema de versionamento de texto";
-  imagensTecnologias.src = "./assets/images/github3d.png";
+  imagensTecnologias.src = "./assets/images/github.png";
 });
 git.addEventListener("click", () => {
   textoSkills.innerHTML = "git é git";
