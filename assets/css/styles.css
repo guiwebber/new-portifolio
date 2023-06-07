@@ -198,7 +198,9 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: 10px;
+  border-radius: 20px;
+  background-image: radial-gradient(#494e4e, #7f8fa8);
 }
 
 .imgContatos {
@@ -264,6 +266,13 @@ section {
 }
 .imagensTecnologias {
   width: 140px;
+}
+.imgHabilidade {
+  height: 250px;
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  background-image: radial-gradient(#494e4e, #7f8fa8);
 }
 #boneco {
   width: 240px;
