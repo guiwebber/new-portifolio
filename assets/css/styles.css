@@ -210,7 +210,6 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 #contato {
@@ -287,9 +286,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  min-width: 370px;
   height: 200px;
-  min-width: 360px;
   flex-wrap: wrap;
 }
 #textoSkills {
