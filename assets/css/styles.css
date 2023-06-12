@@ -245,7 +245,7 @@ section {
 }
 .hardskills {
   margin: auto;
-  height: 96px;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
