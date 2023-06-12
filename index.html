@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Guilherme Webber</title>
+    <link rel="shortcut icon" href="./assets/images/GW-logo.png">
     <link rel="stylesheet" href="./assets/css/styles.css" />
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -18,14 +19,13 @@
               id="iconClose"
               class="disabled"
               src="./assets/images/close-diff.png"
-              alt=""
-            />
+              alt=""/>
           </div>
           <ul class="listaMobile">
-            <li><a href="#sobreTexto">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a class="line" href="#sobreTexto">Sobre</a></li>
+            <li><a class="line" href="#projetos">Projetos</a></li>
+            <li><a class="line" href="#habilidades">Habilidades</a></li>
+            <li><a class="line" href="#contato">Contato</a></li>
             <li>
               <input type="checkbox" id="check" />
               <label for="check"></label>
@@ -36,10 +36,10 @@
         <div id="navDesktop">
           <nav>
             <ul class="listaDesktop">
-              <li><a href="#sobreTexto">Sobre</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#contato">Contato</a></li>
+              <li><a class="line" href="#sobreTexto">Sobre</a></li>
+              <li><a class="line" href="#projetos">Projetos</a></li>
+              <li><a class="line" href="#habilidades">Habilidades</a></li>
+              <li><a class="line" href="#contato">Contato</a></li>
             </ul>
             <div class="dayNight">
               <input type="checkbox" id="checkD" />
@@ -47,7 +47,6 @@
             </div>
           </nav>
         </div>
-
       </header>
 
       <div id="sobre">
@@ -64,20 +63,15 @@
         <h1 class="h1Flecha">⇩</h1>
       </div>
     </div>
-    <main>
 
+
+    <main>
       <div class="containerMain">
         <section id="sobreTexto" >
           <h1 data-aos="fade-up">Sobre mim</h1>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            officia debitis quasi quas. Reiciendis at tempora facilis dolores
-            tempore esse adipisci magnam minima soluta corporis ducimus, minus
-            itaque, iste delectus. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Nobis voluptatem, vero, accusamus ut distinctio
-            exercitationem voluptatibus facere deleniti numquam autem pariatur
-            reprehenderit possimus veniam explicabo cumque, voluptatum eum
-            consequuntur hic!
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque soluta reiciendis assumenda inventore, corrupti 
+           eum iure hic maiores ex dolores alias delectus molestias aspernatur nemo modi neque at sed obcaecati.
           </p>
         </section>
 
@@ -93,20 +87,21 @@
                 <a href="https://valorant-guide.vercel.app/">
                   <img class="imagesProj" src="./assets/images/valo-guide.png"/>
                 </a>
-              </div>
-              <p class="descricaoProj">
-                Esse é um projeto no qual me desafiei em fazer um site que consumisse uma API. Utilizei apenas HTML, CSS e JS para o desenvolvimento do mesmo. 
-              <p class="linkProj"><a class="linkGitHubProj" href="https://github.com/guiwebber/valorant-guide"
-                >Link do projeto</a
-              ></p>
-            </p>
             </div>
+            <p class="descricaoProj">
+                Esse é um projeto no qual me desafiei em fazer um site que consumisse uma API. Utilizei apenas HTML, CSS e JS para o desenvolvimento do mesmo. 
+              <p class="linkProj">
+                <a class="linkGitHubProj" href="https://github.com/guiwebber/valorant-guide">Link do projeto</a>
+              </p>
+            </p>
+          </div>
 
           <div class="projs" data-aos="fade-up">
             <h3>SNKRS Store</h3>
             <div class="divProjetos">
-            <a href="https://snkrs-kohl.vercel.app/">
-              <img class="imagesProj" src="./assets/images/snkrs.png" alt=""/></a>
+              <a href="https://snkrs-kohl.vercel.app/">
+                <img class="imagesProj" src="./assets/images/snkrs.png" alt=""/>
+              </a>
             </div>
             <p class="descricaoProj">
               Esse é um projeto no qual quis por em prática algumas animações CSS. Foram utilizados HTML, CSS e JS para o desenvolvimento. 
@@ -119,10 +114,10 @@
           <div class="projs" data-aos="fade-up">
             <h3>News home page</h3>
             <div class="divProjetos">
-            <a href="https://news-homepage-grid.vercel.app/">
-              <img class="imagesProj" src="./assets/images/newshomepage.png" alt=""/>
-            </a>
-          </div>
+              <a href="https://news-homepage-grid.vercel.app/">
+                <img class="imagesProj" src="./assets/images/newshomepage.png" alt=""/>
+              </a>
+            </div>
             <p class="descricaoProj">
               Este projeto é um projeto de um site chamado Front-end Mentor, no qual me desafiei em fazer diversos projetos e selecionei este para utilizar aqui. Utilizei HTML, CSS, JS.
               <p class="linkProj">
@@ -135,75 +130,79 @@
 
 
           <section id="habilidades" >
-            <h1 data-aos="fade-up">Habilidades</h1>
+            <h1 id="h1Habilidades" data-aos="fade-up">Habilidades</h1>
             <div class="habilidadesFlex">
-              <div class="imgHabilidade">
-                <img class="imagensTecnologias" src="./assets/images/pc3d.png" alt="">
-                <p id="textoSkills">**Clique nas habilidades para ler a descrição delas**</p>
+              <div class="imgHabilidade bgDay">
+                <div class="divImgSkill ">
+                  <img class="imagensTecnologias" src="./assets/images/pc3d.png" alt="">
+                </div>
+                <div class="divTextoSkill">
+                  <p id="textoSkills">**Clique nas habilidades para ler a descrição delas**</p>
+                </div>
               </div>
 
               <div class="hardskill">
-                <div class="hardskills github" data-aos="fade-up">
-                  <img class="imgSkills "src="./assets/images/github.png"/>
-                </div>
-                <div class="hardskills html" data-aos="fade-up">
+                
+                <div class="hardskills bgDay html" data-aos="fade-up">
                   <img class="imgSkills " src="./assets/images/html.png" />
                 </div>
-                <div class="hardskills js" data-aos="fade-up">
+                <div class="hardskills bgDay js" data-aos="fade-up">
                   <img class="imgSkills " src="./assets/images/js.png" />
                 </div>
-              <div class="hardskills git" data-aos="fade-up">
-                <img class="imgSkills " src="./assets/images/git.png" />
-              </div>
-              <div class="hardskills react" data-aos="fade-up">
-                <img class="imgSkills " src="./assets/images/react.png" />
-              </div>
-              <div class="hardskills css" data-aos="fade-up">
-                <img class="imgSkills " src="./assets/images/css.png" />
+                <div class="hardskills bgDay git" data-aos="fade-up">
+                  <img class="imgSkills " src="./assets/images/git.png" />
+                </div>
+                <div class="hardskills bgDay react" data-aos="fade-up">
+                  <img class="imgSkills " src="./assets/images/react.png" />
+                </div>
+                  <div class="hardskills bgDay css" data-aos="fade-up">
+                    <img class="imgSkills " src="./assets/images/css.png" />
+                  </div>
+                  <div class="hardskills bgDay sass" data-aos="fade-up">
+                    <img class="imgSkills "src="./assets/images/sass.png"/>
+                  </div>
+                  <div class="hardskills bgDay styled" data-aos="fade-up">
+                    <img class="imgSkills "src="./assets/images/styled.svg"/>
+                  </div>
+                  <div class="hardskills bgDay mysql" data-aos="fade-up">
+                    <img class="imgSkills "src="./assets/images/mysql.png"/>
+                  </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
 
 
 
         <section id="contato" >
           <h1 data-aos="fade-up">Contato</h1>
-          <p>Aqui você encontrará todos os contatos sobre mim</p>
           <div class="contatosFlex">
             <div id="imagemBoneco">
               <img data-aos="fade-up" id="boneco" src="" alt="">
             </div>
-          <div class="ctts" data-aos="fade-up">
-            <a class="itensContatos" href="https://api.whatsapp.com/send?phone=5554991406029">
-              <img class="imgContatos" src="./assets/images/whatsapp.png" alt=""/>
-            </a>
-            <a class="itensContatos" href="https://www.linkedin.com/in/guilherme-webber-00052318a/">
-              <img class="imgContatos" src="./assets/images/linkedin.png" alt=""/>
-            </a>
-            <a class="itensContatos" href="mailto:guiz1n.webber@gmail.com?">
+            <div class="ctts" data-aos="fade-up">
+              <a class="itensContatos" href="https://api.whatsapp.com/send?phone=5554991406029">
+                <img class="imgContatos" src="./assets/images/whatsapp.png" alt=""/>
+              </a>
+              <a class="itensContatos" href="https://www.linkedin.com/in/guilherme-webber-00052318a/">
+                <img class="imgContatos" src="./assets/images/linkedin.png" alt=""/>
+              </a>
+              <a class="itensContatos" href="mailto:guiz1n.webber@gmail.com?">
 
-              <img class="imgContatos" src="./assets/images/gmail.png" alt=""/>
-            </a>
-            <a class="itensContatos" href="https://drive.google.com/file/d/1z9ZH7kP_4y75sVm_A9wo3nQhZSdFVdGa/view?usp=sharing">
-              
-              <img class="imgContatos" src="./assets/images/curriculos.png"/>
-            </a>
+                <img class="imgContatos" src="./assets/images/gmail.png" alt=""/>
+              </a>
+              <a class="itensContatos" href="https://drive.google.com/file/d/1z9ZH7kP_4y75sVm_A9wo3nQhZSdFVdGa/view?usp=sharing">
+                
+                <img class="imgContatos" src="./assets/images/curriculos.png"/>
+              </a>
+            </div>
           </div>
-        </div>
-         </section>
+        </section>
       </div>
       
     </main>
-    <footer id="footer">
-      <p>© Todos os direitos reservados</p>
-    </footer>
     <script src="./assets/js/scripts.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init();</script>
   </body>
 </html>

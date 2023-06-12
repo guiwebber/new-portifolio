@@ -28,32 +28,32 @@ let footer = document.getElementById("footer");
 let check = document.getElementById("check");
 
 let link = document.querySelectorAll("li a");
-console.log(link);
+let hardskills = document.getElementsByClassName("hardskills");
+let imgHabilidade = document.getElementsByClassName("imgHabilidade");
+let h1Habilidades = document.getElementById("h1Habilidades");
 function changeDay() {
-  for (var i = 0; i < link.length; i++) {
-    link[i].style.color = "black";
-  }
-  container.style.background = ` linear-gradient(27deg, #73abe2e0 51.04%, #fff 51.05%)`;
+  container.style.background = ` linear-gradient(27deg, #fff5d0 50%, #243947 50%)`;
   container.style.color = "black";
-  sobreTexto.style.backgroundColor = "#fff";
-  habilidades.style.backgroundColor = "#fff";
-  sobreTexto.style.color = "rgba(0, 0, 0, 0.867)";
-  habilidades.style.color = "rgba(0, 0, 0, 0.867)";
+  sobreTexto.style.backgroundColor = "#243947";
+  habilidades.style.backgroundColor = "#243947";
+  sobreTexto.style.color = "#fff5d0";
+  habilidades.style.color = "#000";
 
-  contato.style.color = "rgba(0, 0, 0, 0.867)";
-  projetos.style.color = "rgba(0, 0, 0, 0.867)";
-  projetos.style.backgroundColor = "#73abe2e0";
-  contato.style.backgroundColor = "#73abe2e0";
-  footer.style.backgroundColor = "rgba(19, 82, 124, 0.947)";
+  contato.style.color = "#243947";
+  projetos.style.color = "#243947";
+  projetos.style.backgroundColor = "#fff5d0";
+  contato.style.backgroundColor = "#fff5d0";
+  for (var i = 0; i < hardskills.length; i++) {
+    hardskills[i].classList.remove("bgNight");
+    hardskills[i].classList.add("bgDay");
+  }
+  imgHabilidade[0].classList.remove("bgNight");
+  imgHabilidade[0].classList.add("bgDay");
 }
 
 function changeNight() {
-  container.style.background = `  linear-gradient(27deg,  rgba(0, 0, 0, 0.555) 51.04%, rgba(0, 0, 0, 0.867)51.05%)`;
+  container.style.background = `  linear-gradient(27deg,  rgba(0, 0, 0, 0.767) 50%, rgba(0, 0, 0, 0.867)50%)`;
   container.style.color = "white";
-
-  for (var i = 0; i < link.length; i++) {
-    link[i].style.color = "white";
-  }
 
   sobreTexto.style.backgroundColor = "rgba(0, 0, 0, 0.867)";
   habilidades.style.backgroundColor = "rgba(0, 0, 0, 0.867)";
@@ -61,13 +61,17 @@ function changeNight() {
   sobreTexto.style.color = "rgba(255, 255, 255, 1)";
   habilidades.style.color = "rgba(255, 255, 255, 1)";
 
-  projetos.style.backgroundColor = "rgba(0, 0, 0, 0.555)";
-  contato.style.backgroundColor = "rgba(0, 0, 0, 0.555)";
+  projetos.style.backgroundColor = "rgba(0, 0, 0, 0.767)";
+  contato.style.backgroundColor = "rgba(0, 0, 0, 0.767)";
 
   projetos.style.color = "rgba(255, 255, 255, 0.867)";
   contato.style.color = "rgba(255, 255, 255, 0.867)";
-
-  footer.style.backgroundColor = "rgba(115, 0, 255, 1)";
+  for (var i = 0; i < hardskills.length; i++) {
+    hardskills[i].classList.remove("bgDay");
+    hardskills[i].classList.add("bgNight");
+  }
+  imgHabilidade[0].classList.remove("bgDay");
+  imgHabilidade[0].classList.add("bgNight");
 }
 
 let checkD = document.getElementById("checkD");
@@ -93,8 +97,11 @@ let css = document.querySelector(".css");
 let js = document.querySelector(".js");
 let git = document.querySelector(".git");
 let github = document.querySelector(".github");
+let sass = document.querySelector(".sass");
 let react = document.querySelector(".react");
 let html = document.querySelector(".html");
+let mysql = document.querySelector(".mysql");
+let styled = document.querySelector(".styled");
 let imagensTecnologias = document.querySelector(".imagensTecnologias");
 
 css.addEventListener("click", () => {
@@ -106,7 +113,8 @@ js.addEventListener("click", () => {
   imagensTecnologias.src = "./assets/images/js.png";
 });
 react.addEventListener("click", () => {
-  textoSkills.innerHTML = "React é uma biblioteca";
+  textoSkills.innerHTML =
+    "O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interfaces. Ele permite compor UIs complexas a partir de pequenos e isolados códigos chamados “componentes”.";
   imagensTecnologias.src = "./assets/images/react.png";
 });
 html.addEventListener("click", () => {
@@ -114,13 +122,21 @@ html.addEventListener("click", () => {
     "HTML significa Hyper Text Markup Language, que traduzido seria linguagem de marcação de texto";
   imagensTecnologias.src = "./assets/images/html.png";
 });
-github.addEventListener("click", () => {
-  textoSkills.innerHTML = "Github é um sistema de versionamento de texto";
-  imagensTecnologias.src = "./assets/images/github.png";
+sass.addEventListener("click", () => {
+  textoSkills.innerHTML = "sass é um estilo";
+  imagensTecnologias.src = "./assets/images/sass.png";
 });
 git.addEventListener("click", () => {
   textoSkills.innerHTML = "git é git";
   imagensTecnologias.src = "./assets/images/git.png";
+});
+mysql.addEventListener("click", () => {
+  textoSkills.innerHTML = "git é git";
+  imagensTecnologias.src = "./assets/images/mysql.png";
+});
+styled.addEventListener("click", () => {
+  textoSkills.innerHTML = "git é git";
+  imagensTecnologias.src = "./assets/images/styled.svg";
 });
 
 /*************************BONECO************************ */

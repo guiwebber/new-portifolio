@@ -8,7 +8,7 @@
   font-family: "Overpass", sans-serif;
 }
 #container {
-  background: linear-gradient(27deg, #73abe2e0 51.04%, #ffffffe1 51.05%);
+  background: linear-gradient(27deg, #fff5d0 50%, #243947 50%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,6 +47,14 @@ header {
   text-align: center;
   display: flex;
   justify-content: center;
+}
+.listaDesktop li a,
+.listaMobile li a {
+  color: white;
+}
+.listaDesktop .line:hover,
+.listaMobile .line:hover {
+  color: rgb(209, 163, 11);
 }
 .links:hover {
   color: #c88c31;
@@ -119,8 +127,14 @@ main {
   height: 90vh;
   width: 100%;
 }
-#sobre {
-  margin-top: 0%;
+.containerMain {
+  width: 100%;
+}
+section {
+  padding: 40px 0;
+}
+#navDesktop {
+  display: none;
 }
 .fotoPerfil {
   width: 200px;
@@ -135,17 +149,8 @@ main {
   text-align: center;
 }
 
-.flecha {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  animation: flecha 0.6s infinite alternate-reverse linear;
-  position: absolute;
-  bottom: 0;
-}
-.h1Flecha {
-  text-align: center;
-  font-size: 5rem;
+.apresentation {
+  font-size: 1.5rem;
 }
 .nome {
   animation: piscaCursor 500ms steps(40) infinite normal,
@@ -156,15 +161,34 @@ main {
   margin: auto;
   max-width: fit-content;
 }
-#navDesktop {
-  display: none;
+.h1Flecha {
+  text-align: center;
+  font-size: 5rem;
 }
-.apresentation {
-  font-size: 1.5rem;
+.flecha {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  animation: flecha 0.6s infinite alternate-reverse linear;
+  position: absolute;
+  bottom: 0;
+}
+#sobre {
+  margin-top: 0%;
+}
+#sobreTexto {
+  padding: 40px 10px;
+  background-color: #0f222d;
+  color: #fff5d0;
+}
+#sobreTexto p {
+  margin: 0 20px;
 }
 
-.containerMain {
-  width: 100%;
+#projetos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .imagesProj {
   width: 300px;
@@ -178,47 +202,7 @@ main {
   width: 350px;
   margin: 20px auto;
 }
-.imagemEu {
-  width: 250px;
-}
-#sobreTexto {
-  padding: 40px 10px;
-}
-.imgSkills {
-  width: 70px;
-  cursor: pointer;
-  margin: 10px;
-}
-.hardskills {
-  margin: auto;
-  max-height: 96px;
-  height: 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  border-radius: 20px;
-  background-image: radial-gradient(#494e4e, #7f8fa8);
-  width: 100px;
-  padding: 30px;
-}
 
-.imgContatos {
-  width: 70px;
-}
-#projetos {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#contato {
-  background-color: #ffffff;
-  width: 100%;
-}
-#contato a {
-  margin: 10px;
-}
 .titleProj {
   display: flex;
   justify-content: center;
@@ -243,44 +227,33 @@ main {
   font-weight: bold;
 }
 #projetos {
-  background-color: #73abe2e0;
+  background-color: #fff5d0;
 }
-#contato {
-  background-color: #73abe2e0;
-}
+
 #habilidades {
-  background-color: #fff;
+  background-color: #0f222d;
 }
-#sobreTexto {
-  background-color: #fff;
+#habilidades h1{
+  color: #fff5d0;
 }
-#sobreTexto p {
-  margin: 0 20px;
+#textoSkills {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
 }
-footer {
-  background-color: rgba(139, 129, 165, 0.947);
-}
-section {
-  padding: 40px 0;
-}
-.imagensTecnologias {
-  width: 140px;
-}
-.imgHabilidade {
-  height: 250px;
-  width: 350px;
-  padding: 30px;
+.hardskills {
+  margin: auto;
+  max-height: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
   border-radius: 20px;
-  background-image: radial-gradient(#494e4e, #7f8fa8);
-}
-#boneco {
-  width: 240px;
-}
-.imgContatos {
-  width: 40px;
-}
-.imgSkills {
-  width: 50px;
+  width: 100px;
+  padding: 30px;
 }
 .hardskill {
   display: flex;
@@ -290,22 +263,22 @@ section {
   height: 200px;
   flex-wrap: wrap;
 }
-#textoSkills {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.imgSkills {
+  width: 70px;
+  cursor: pointer;
+  margin: 10px;
+  filter: gray;
+  filter: grayscale(1);
 }
-.contatosFlex {
-  display: flex;
-  justify-content: space-evenly;
+
+.imagensTecnologias {
+  width: 140px;
 }
-.ctts {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+.imgHabilidade {
   height: 250px;
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
 }
 .habilidadesFlex {
   display: flex;
@@ -314,6 +287,40 @@ section {
   align-items: center;
 }
 
+#contato {
+  background-color: #fff5d0;
+  width: 100%;
+}
+#contato a {
+  margin: 10px;
+}
+.imgContatos {
+  width: 70px;
+}
+.ctts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+}
+.imgContatos {
+  width: 40px;
+}
+.contatosFlex {
+  display: flex;
+  justify-content: space-evenly;
+}
+#boneco {
+  width: 240px;
+}
+
+.bgDay {
+  background: #fff5d0;
+}
+.bgNight {
+  background-color: rgba(100, 98, 98, 0.842);
+}
 @keyframes flecha {
   0% {
     bottom: 10px;
@@ -342,16 +349,7 @@ section {
   }
 }
 
-@media (min-width: 650px) {
-  #sobre {
-    margin-top: 20%;
-  }
-}
-
 @media (min-width: 1024px) {
-  #sobre {
-    margin-top: 10%;
-  }
   #iconOpen {
     visibility: hidden;
   }
@@ -441,24 +439,23 @@ section {
   }
   .hardskills img {
     width: 70px;
-    transition: 0.1s;
+    transition: 0.3s;
   }
-  .hardskills img:hover {
-    width: 80px;
+  .hardskills:hover > .imgSkills {
+    filter: grayscale(0%);
+  }
+  .hardskills:hover {
+    transform: scale(0.6);
   }
   .hardskill {
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: auto;
-    flex-wrap: nowrap;
+    width: 500px;
+    height: max-content;
   }
   .hardskills {
     margin: 10px;
-    background-image: radial-gradient(#494e4e, #7f8fa8);
     border-radius: 20px;
     cursor: pointer;
-    width: 300px;
   }
   .ctts img {
     width: 65px;
@@ -469,18 +466,24 @@ section {
     justify-content: space-evenly;
   }
   .imgHabilidade {
-    padding: 20px;
     border-radius: 20px;
-    background-image: radial-gradient(#494e4e, #7f8fa8);
     width: 350px;
-    height: 420px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
+  .imgHabilidade img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .divTextoSkill {
+    padding: 0 0 15px 0;
+  }
   .imagensTecnologias {
-    width: 300px;
+    width: 280px;
     margin-bottom: 20px;
   }
   .allProjs {
