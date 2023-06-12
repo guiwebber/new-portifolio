@@ -233,15 +233,15 @@ section {
 #habilidades {
   background-color: #0f222d;
 }
-#habilidades h1{
+#habilidades h1 {
   color: #fff5d0;
 }
 #textoSkills {
-  height: 50px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 .hardskills {
   margin: auto;
@@ -275,7 +275,7 @@ section {
   width: 140px;
 }
 .imgHabilidade {
-  height: 250px;
+  height: 340px;
   width: 350px;
   padding: 30px;
   border-radius: 20px;
@@ -320,6 +320,9 @@ section {
 }
 .bgNight {
   background-color: rgba(100, 98, 98, 0.842);
+}
+.imgSkills:hover {
+  filter: grayscale(0%);
 }
 @keyframes flecha {
   0% {
@@ -441,12 +444,7 @@ section {
     width: 70px;
     transition: 0.3s;
   }
-  .hardskills:hover > .imgSkills {
-    filter: grayscale(0%);
-  }
-  .hardskills:hover {
-    transform: scale(0.6);
-  }
+
   .hardskill {
     display: flex;
     width: 500px;
@@ -468,7 +466,7 @@ section {
   .imgHabilidade {
     border-radius: 20px;
     width: 350px;
-    height: 450px;
+    height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
