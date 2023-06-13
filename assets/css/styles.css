@@ -18,7 +18,7 @@
   color: #000000;
 }
 #container {
-  background: linear-gradient(27deg, var(--bg-white) 50%, var(--bg-blue) 50%);
+  background: linear-gradient(33deg, var(--bg-white) 50%, var(--bg-blue) 50%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +193,7 @@ section {
   margin: 0 0 20px 0;
 }
 .fotoPerfil {
-  width: 300px;
+  width: 320px;
   border-radius: 50px;
 }
 .fotoFlutuante {
@@ -201,7 +201,7 @@ section {
   text-align: center;
 }
 .textoNome {
-  margin: 10px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -230,7 +230,7 @@ section {
   bottom: 0;
 }
 #sobre {
-  margin-top: 0%;
+  margin-top: 22%;
 }
 #sobreTexto {
   padding: 40px 10px;
@@ -475,6 +475,10 @@ section {
   .euImagem {
     width: 200px;
     border-radius: 120px;
+  }
+
+  #sobre {
+    margin-top: 2%;
   }
   .sobreFlex {
     display: flex;
