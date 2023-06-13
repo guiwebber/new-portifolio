@@ -47,15 +47,18 @@ header {
   font-size: 2rem;
   transition: 0.3s;
   font-weight: 600;
+  display: block;
 }
 #navMobile a:hover {
   color: #c88c31;
 }
 
 #navMobile li {
+  display: block;
   margin: 20px auto;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .links:hover {
@@ -73,7 +76,10 @@ header {
   align-items: center;
   z-index: 22;
 }
-
+.listaMobile {
+  display: flex;
+  flex-direction: column;
+}
 li {
   float: left;
   padding: 10px 20px;
