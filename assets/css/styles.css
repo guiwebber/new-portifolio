@@ -273,9 +273,8 @@ section {
   font-size: 1.2rem;
   font-weight: 500;
   transition: 0.1s;
-}
-.linkProj {
-  width: 300px;
+  text-align: center;
+  margin: auto;
 }
 .linkGitHubProj:hover {
   color: #8b52e8;
@@ -497,6 +496,9 @@ section {
     justify-content: space-around;
   }
 
+  .linkProj {
+    width: 300px;
+  }
   li a {
     color: rgb(10, 10, 10);
   }
