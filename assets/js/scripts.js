@@ -31,12 +31,14 @@ let link = document.querySelectorAll("li a");
 let hardskills = document.getElementsByClassName("hardskills");
 let imgHabilidade = document.getElementsByClassName("imgHabilidade");
 let h1Habilidades = document.getElementById("h1Habilidades");
+let line = document.getElementsByClassName("line");
+
 function changeDay() {
-  container.style.background = ` linear-gradient(27deg, #fff5d0 50%, #243947 50%)`;
+  container.style.background = ` linear-gradient(27deg, #fff5d0 50%, #39576b 50%)`;
   container.style.color = "black";
-  sobreTexto.style.backgroundColor = "#243947";
-  habilidades.style.backgroundColor = "#243947";
-  sobreTexto.style.color = "#fff5d0";
+  sobreTexto.style.backgroundColor = "#39576b";
+  habilidades.style.backgroundColor = "#39576b";
+  sobreTexto.style.color = "#000";
   habilidades.style.color = "#000";
 
   contato.style.color = "#243947";
@@ -49,6 +51,10 @@ function changeDay() {
   }
   imgHabilidade[0].classList.remove("bgNight");
   imgHabilidade[0].classList.add("bgDay");
+  for (var i = 0; i < line.length; i++) {
+    line[i].classList.remove("white");
+    line[i].classList.add("black");
+  }
 }
 
 function changeNight() {
@@ -72,6 +78,10 @@ function changeNight() {
   }
   imgHabilidade[0].classList.remove("bgDay");
   imgHabilidade[0].classList.add("bgNight");
+  for (var i = 0; i < line.length; i++) {
+    line[i].classList.remove("black");
+    line[i].classList.add("white");
+  }
 }
 
 let checkD = document.getElementById("checkD");
